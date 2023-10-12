@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/chat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:onClick="onclick"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@android:drawable/sym_action_chat" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/people"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:onClick="onclick"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@android:drawable/sym_action_email" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/moment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:onClick="onclick"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@android:drawable/star_big_off" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/settings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:onClick="onclick"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@android:drawable/ic_menu_delete" />
+    </LinearLayout>
+
+</LinearLayout>
