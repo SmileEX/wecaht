@@ -3,77 +3,120 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:baselineAligned="false"
     android:orientation="horizontal">
 
     <LinearLayout
         android:id="@+id/chat"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
         android:onClick="onclick"
         android:orientation="vertical">
 
-        <ImageView
+        <ImageButton
+            android:id="@+id/button1"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="40dp"
             android:layout_weight="1"
+            android:clickable="false"
             android:background="@android:color/holo_green_dark"
-            android:contentDescription="@string/todo"
-            app:srcCompat="@android:drawable/sym_action_chat" />
+            app:srcCompat="@drawable/tab_weixin_normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#669800"
+            android:gravity="center"
+            android:text="聊天"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/people"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
         android:onClick="onclick"
         android:orientation="vertical">
 
-        <ImageView
+        <ImageButton
+            android:id="@+id/button2"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="40dp"
+            android:clickable="false"
             android:layout_weight="1"
             android:background="@android:color/holo_green_dark"
-            android:contentDescription="@string/todo"
-            app:srcCompat="@android:drawable/sym_action_email" />
+            app:srcCompat="@drawable/tab_address_normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#669800"
+            android:gravity="center"
+            android:text="联系人"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/moment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
         android:onClick="onclick"
         android:orientation="vertical">
 
-        <ImageView
+        <ImageButton
+            android:id="@+id/button3"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="40dp"
+            android:clickable="false"
             android:layout_weight="1"
             android:background="@android:color/holo_green_dark"
-            android:contentDescription="@string/todo"
-            app:srcCompat="@android:drawable/star_big_off" />
+            app:srcCompat="@drawable/tab_find_frd_normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#669800"
+            android:gravity="center"
+            android:text="发现"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/settings"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
         android:onClick="onclick"
         android:orientation="vertical">
 
-        <ImageView
+        <ImageButton
+            android:id="@+id/button4"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="40dp"
+            android:clickable="false"
             android:layout_weight="1"
             android:background="@android:color/holo_green_dark"
-            android:contentDescription="@string/todo"
-            app:srcCompat="@android:drawable/ic_menu_delete" />
+            app:srcCompat="@drawable/tab_settings_normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#669800"
+            android:gravity="center"
+            android:text="我"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
     </LinearLayout>
 
 </LinearLayout>
