@@ -19,8 +19,7 @@ public class settingFragment extends Fragment {
     private List<String> mList = new ArrayList<>();
     private List<Integer> mSrc = new ArrayList<>();
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         View view= inflater.inflate(R.layout.activity_recycler_view, container, false);
         context = view.getContext();
         InitData();
